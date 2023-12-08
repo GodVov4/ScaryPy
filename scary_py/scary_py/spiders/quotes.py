@@ -3,7 +3,7 @@ import scrapy
 
 class QuotesSpider(scrapy.Spider):
     name = "quotes"
-    custom_settings = {'FEED_FORMAT': 'json', 'FEED_URI': 'authors.json'}
+    custom_settings = {'FEED_FORMAT': 'json', 'FEED_URI': 'quotes.json'}
     allowed_domains = ['quotes.toscrape.com']
     start_urls = ['https://quotes.toscrape.com']
 
